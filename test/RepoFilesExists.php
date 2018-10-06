@@ -6,7 +6,6 @@ class RepoFilesExistsTest extends \PHPUnit_Framework_TestCase
 
     protected function setUp()
     {
-    	$this->markTestSkipped('Temporarily skip test');
     	$this->requiredFiles = [
             ['./Dockerfile', './docker/Dockerfile'],
             ['./docker-compose.yml', './docker/docker-compose.yml'],
@@ -29,6 +28,7 @@ class RepoFilesExistsTest extends \PHPUnit_Framework_TestCase
 
     public function testFileArePresentInRepo()
     {
+		$this->markTestSkipped('Temporarily skip test');
         foreach ($this->requiredFiles as $filePath) {
             if (is_array($filePath)) {
                 $exists = array_filter(
