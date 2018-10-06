@@ -47,7 +47,8 @@ class SmtpapiTest_Header extends \PHPUnit_Framework_TestCase
 		$header = new Smtpapi\Header();
 
 		$header->addTo('foo@example.com', 'Mike, John and Jane Bar');
-		$this->assertEquals($this->t['add_to'], $header->jsonString());
+		$this->assertEquals($this->t['add_to_name_with_comma'],
+							$header->jsonString());
 	}
 
     public function testSetTos()

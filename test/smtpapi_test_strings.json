@@ -2,6 +2,7 @@
     "json_string": "{}",
     "add_to": "{\"to\":[\"foo@example.com\",\"bar@example.com\"]}",
     "add_to_name": "{\"to\":[\"Mike Bar <foo@example.com>\"]}",
+    "add_to_name_with_comma": "{\"to\":[\"\"Mike, John and Jane Bar\" <foo@example.com>\"]}",
     "set_tos": "{\"to\":[\"setTos@mailinator.com\"]}",
     "add_substitution": "{\"sub\":{\"sub\":[\"val\"]}}",
     "set_substitutions": "{\"sub\":{\"sub\":[\"val\"]}}",
