@@ -6,9 +6,9 @@ class RepoFilesExistsTest extends \PHPUnit_Framework_TestCase
 
     protected function setUp()
     {
-        $this->requiredFiles = [
-            ['./Dockerfile', './docker/Dockerfile'],
-            ['./docker-compose.yml', './docker/docker-compose.yml'],
+    	$this->requiredFiles = [
+//            ['./Dockerfile', './docker/Dockerfile'],
+//            ['./docker-compose.yml', './docker/docker-compose.yml'],
             './.codeclimate.yml',
             './.env_sample',
             './.github/ISSUE_TEMPLATE',
